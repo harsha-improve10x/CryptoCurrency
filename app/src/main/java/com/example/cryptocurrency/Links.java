@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Links {
     private ArrayList<String> explorer;
-    private ArrayList<String> faceBook;
+    private ArrayList<String> facebook;
     private ArrayList<String> reddit;
     @SerializedName("source_code")
     private ArrayList<String> sourceCode;
@@ -22,11 +22,11 @@ public class Links {
     }
 
     public ArrayList<String> getFaceBook() {
-        return faceBook;
+        return facebook;
     }
 
     public void setFaceBook(ArrayList<String> faceBook) {
-        this.faceBook = faceBook;
+        this.facebook = faceBook;
     }
 
     public ArrayList<String> getReddit() {
