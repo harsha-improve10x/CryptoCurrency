@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.coinsdetail;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.cryptocurrency.Constants;
 import com.example.cryptocurrency.databinding.ActivityCoinDetailsBinding;
 import com.example.cryptocurrency.modelclass.coinname.CoinName;
 import com.example.cryptocurrency.modelclass.coinname.Tags;

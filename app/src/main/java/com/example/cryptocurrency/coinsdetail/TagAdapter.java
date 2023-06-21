@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.coinsdetail;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.cryptocurrency.databinding.TagsItemLayoutBinding;
 import com.example.cryptocurrency.modelclass.coinname.Tags;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TagAdapter extends RecyclerView.Adapter<TagsViewHolder> {

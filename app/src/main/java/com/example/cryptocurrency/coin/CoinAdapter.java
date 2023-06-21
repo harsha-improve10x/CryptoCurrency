@@ -6,8 +6,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cryptocurrency.OnItemActionListener;
-import com.example.cryptocurrency.coin.CoinsViewHolder;
 import com.example.cryptocurrency.databinding.CoinItemLayoutBinding;
 import com.example.cryptocurrency.modelclass.Coin;
 

@@ -16,14 +16,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CoinDetailsActivity">
+        tools:context=".coinsdetail.CoinDetailsActivity">
 
         <TextView
             android:id="@+id/rank_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="@{String.valueOf(coinDetails.rank)}"
+            android:text="@{String.valueOf(coinDetails.rank) + `. `}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="rank" />
@@ -41,7 +41,7 @@
             android:id="@+id/symbol_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{coinDetails.symbol}"
+            android:text="@{` (` + coinDetails.symbol + `)`}"
             app:layout_constraintStart_toEndOf="@+id/name_txt"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="symbol" />
@@ -51,6 +51,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{coinDetails.activate ? `active`:`deActive`}"
+            tools:text="active"
+            android:textStyle="italic"
+            android:textColor="#90EE20"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +61,6 @@
             android:id="@+id/description_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
             android:text="@{coinDetails.description}"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +88,6 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Team Members"
             app:layout_constraintStart_toStartOf="parent"

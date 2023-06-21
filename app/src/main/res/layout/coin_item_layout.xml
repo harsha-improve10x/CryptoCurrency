@@ -19,7 +19,7 @@
             android:id="@+id/rank_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(coin.rank)}"
+            android:text="@{String.valueOf(coin.rank) + `. `}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Rank" />
@@ -37,7 +37,7 @@
             android:id="@+id/symbol_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{coin.symbol}"
+            android:text="@{` (` + coin.symbol + `)`}"
             app:layout_constraintStart_toEndOf="@+id/name_txt"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="symbol" />
@@ -47,6 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{coin.active ? `active`: `deActive`}"
+            android:textStyle="italic"
+            android:textColor="#90EE02"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

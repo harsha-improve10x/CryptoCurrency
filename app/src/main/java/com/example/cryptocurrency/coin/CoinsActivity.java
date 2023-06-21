@@ -7,9 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.cryptocurrency.CoinDetailsActivity;
+import com.example.cryptocurrency.coinsdetail.CoinDetailsActivity;
 import com.example.cryptocurrency.Constants;
-import com.example.cryptocurrency.OnItemActionListener;
 import com.example.cryptocurrency.network.CoinApi;
 import com.example.cryptocurrency.network.CoinService;
 import com.example.cryptocurrency.databinding.ActivityCoinsBinding;
