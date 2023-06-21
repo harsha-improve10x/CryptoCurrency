@@ -3,9 +3,13 @@ package com.example.cryptocurrency.coin;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.cryptocurrency.CoinDetailsActivity;
+import com.example.cryptocurrency.Constants;
+import com.example.cryptocurrency.OnItemActionListener;
 import com.example.cryptocurrency.network.CoinApi;
 import com.example.cryptocurrency.network.CoinService;
 import com.example.cryptocurrency.databinding.ActivityCoinsBinding;
@@ -42,6 +46,14 @@ public class CoinsActivity extends AppCompatActivity {
     private void setUpAdapter() {
         coinAdapter = new CoinAdapter();
         coinAdapter.setCoins(coins);
+        coinAdapter.setOnItemActionListener(new OnItemActionListener() {
+            @Override
+            public void onClicked(String coinId) {
+                Intent intent = new Intent(CoinsActivity.this, CoinDetailsActivity.class);
+                intent.putExtra(Constants.KEY_COIN_VALUE, coinId);
+                startActivity(intent);
+            }
+        });
     }
 
     private void getCoins() {
