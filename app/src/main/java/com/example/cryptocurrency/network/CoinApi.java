@@ -1,4 +1,6 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.network;
+
+import com.example.cryptocurrency.Constants;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

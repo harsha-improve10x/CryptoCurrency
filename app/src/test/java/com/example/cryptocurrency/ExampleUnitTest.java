@@ -4,7 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import com.example.cryptocurrency.modelclass.coinname.CoinName;
 import com.example.cryptocurrency.modelclass.Coin;
+import com.example.cryptocurrency.network.CoinApi;
+import com.example.cryptocurrency.network.CoinService;
 import com.google.gson.Gson;
 
 import java.io.IOException;

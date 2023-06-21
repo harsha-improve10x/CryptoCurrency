@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.coin;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.cryptocurrency.network.CoinApi;
+import com.example.cryptocurrency.network.CoinService;
 import com.example.cryptocurrency.databinding.ActivityCoinsBinding;
 import com.example.cryptocurrency.modelclass.Coin;
 

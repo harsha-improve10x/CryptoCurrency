@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.coin;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,10 +6,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cryptocurrency.coin.CoinsViewHolder;
 import com.example.cryptocurrency.databinding.CoinItemLayoutBinding;
 import com.example.cryptocurrency.modelclass.Coin;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CoinAdapter extends RecyclerView.Adapter<CoinsViewHolder> {

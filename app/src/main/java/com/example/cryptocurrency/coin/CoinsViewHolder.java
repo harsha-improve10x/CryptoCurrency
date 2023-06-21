@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.coin;
 
 import android.view.View;
 

@@ -1,4 +1,4 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.modelclass.coinname;
 
 import com.google.gson.annotations.SerializedName;
 

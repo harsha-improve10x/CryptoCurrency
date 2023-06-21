@@ -1,5 +1,7 @@
-package com.example.cryptocurrency;
+package com.example.cryptocurrency.network;
 
+import com.example.cryptocurrency.Constants;
+import com.example.cryptocurrency.modelclass.coinname.CoinName;
 import com.example.cryptocurrency.modelclass.Coin;
 
 import java.util.List;
